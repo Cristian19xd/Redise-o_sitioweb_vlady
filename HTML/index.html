@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vlady - Repostería Fina y Postres Peruanos</title>
+    <meta
+      name="description"
+      content="¡Bienvenido a Vlady - tu destino para repostería fina, postres peruanos auténticos y deliciosos dulces artesanales. ¡Visítanos hoy!"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <!-- Logo -->
+          <a href="index.html" class="logo">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F12137cca8a5e4f2cae2e99b67bb8f9f5%2F9445a14b8acc4eea86cf2a6ab8ebc6ed?format=webp&width=800"
+              alt="Vlady Repostería Fina y Fruta Bar - Logo Oficial"
+              class="vlady-logo"
+            />
+            <div class="logo-text-container">
+              <h1 class="logo-text">VLADY</h1>
+              <p class="logo-subtitle">REPOSTERÍA FINA</p>
+            </div>
+          </a>
+          <!-- Navigation -->
+          <nav class="nav">
+            <a href="index.html" class="nav-link active">INICIO</a>
+            <a href="about.html" class="nav-link">NOSOTROS</a>
+            <a href="vlady-desserts.html" class="nav-link">POSTRES VLADY</a>
+            <a href="contact.html" class="nav-link">CONTACTO</a>
+          </nav>
+
+          <!-- Mobile menu button -->
+          <button class="mobile-menu" onclick="toggleMobileMenu()">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Overlay -->
+      <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <div class="mobile-nav-content">
+          <button class="mobile-nav-close" onclick="toggleMobileMenu()">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link active">INICIO</a>
+            <a href="about.html" class="mobile-nav-link">NOSOTROS</a>
+            <a href="vlady-desserts.html" class="mobile-nav-link"
+              >POSTRES VLADY</a
+            >
+            <a href="contact.html" class="mobile-nav-link">CONTACTO</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Carousel Section -->
+    <section class="hero-carousel">
+      <div class="carousel-container">
+        <div class="carousel-slides">
+          <div class="carousel-slide active">
+            <div
+              class="slide-background"
+              style="
+                background-image: url(&quot;https://images.pexels.com/photos/30667453/pexels-photo-30667453.jpeg&quot;);
+              "
+            ></div>
+          </div>
+          <div class="carousel-slide">
+            <div
+              class="slide-background"
+              style="
+                background-image: url(&quot;https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg&quot;);
+              "
+            ></div>
+          </div>
+          <div class="carousel-slide">
+            <div
+              class="slide-background"
+              style="
+                background-image: url(&quot;https://images.pexels.com/photos/3992204/pexels-photo-3992204.jpeg&quot;);
+              "
+            ></div>
+          </div>
+          <div class="carousel-slide">
+            <div
+              class="slide-background"
+              style="
+                background-image: url(&quot;https://images.pexels.com/photos/7190364/pexels-photo-7190364.jpeg&quot;);
+              "
+            ></div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-nav carousel-prev" onclick="prevSlide()">
+          <svg
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+              d="m15 18-6-6 6-6"
+            ></path>
+          </svg>
+        </button>
+        <button class="carousel-nav carousel-next" onclick="nextSlide()">
+          <svg
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+              d="m9 18 6-6-6-6"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- Carousel Dots -->
+        <div class="carousel-dots">
+          <button
+            class="carousel-dot active"
+            onclick="currentSlide(1)"
+          ></button>
+          <button class="carousel-dot" onclick="currentSlide(2)"></button>
+          <button class="carousel-dot" onclick="currentSlide(3)"></button>
+          <button class="carousel-dot" onclick="currentSlide(4)"></button>
+        </div>
+      </div>
+
+      <!-- Hero Content Overlay -->
+      <div class="hero-content">
+        <h1 class="hero-title">Bienvenido a Vlady</h1>
+        <a href="vlady-desserts.html" class="btn btn-primary btn-lg"
+          >ORDENA AHORA</a
+        >
+      </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Nuestras Especialidades</h2>
+
+        <div class="specialties-grid">
+          <!-- Tres Leches Vlady -->
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/7190364/pexels-photo-7190364.jpeg"
+              alt="Tentadora torta en capas cubierta con cerezas y queso, perfecta para los amantes de los postres."
+              class="card-image card-image-square"
+            />
+            <div class="card-content">
+              <h3 class="card-title card-text">Tres Leches de Vlady</h3>
+              <p
+                style="
+                  color: #92023d;
+                  font-weight: 600;
+                  font-size: 0.9rem;
+                  margin-top: 0.5rem;
+                "
+              >
+                S/ 74.00
+              </p>
+            </div>
+          </div>
+
+          <!-- Chocolate Vlady -->
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/7190369/pexels-photo-7190369.jpeg"
+              alt="Deléitate con un rico postre de chocolate casero con capas cremosas, perfecto para los golosos."
+              class="card-image card-image-square"
+            />
+            <div class="card-content">
+              <h3 class="card-title card-text">Chocolate Vlady</h3>
+              <p
+                style="
+                  color: #92023d;
+                  font-weight: 600;
+                  font-size: 0.9rem;
+                  margin-top: 0.5rem;
+                "
+              >
+                S/ 73.00
+              </p>
+            </div>
+          </div>
+
+          <!-- Pastafrola de Membrillo -->
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/10485882/pexels-photo-10485882.jpeg"
+              alt="Primer plano de una tarta de manzana brillante con corteza enrejada, fotografiada en película."
+              class="card-image card-image-square"
+            />
+            <div class="card-content">
+              <h3 class="card-title card-text">Pastafrola de Membrillo</h3>
+              <p
+                style="
+                  color: #92023d;
+                  font-weight: 600;
+                  font-size: 0.9rem;
+                  margin-top: 0.5rem;
+                "
+              >
+                S/ 36.00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+      <div class="container">
+        <blockquote class="testimonial-quote">
+          "La torta tres leches de Vlady es simplemente perfecta. Cada bocado te
+          transporta a los sabores auténticos del Perú. ¡Una experiencia
+          gastronómica única en Lima!"
+        </blockquote>
+        <cite class="testimonial-author"
+          >- María Elena Vargas, Cliente Frecuente desde 2018</cite
+        >
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Contáctanos</h2>
+
+        <div class="contact-info">
+          <p><strong>📍 Lima, Perú - Av. Javier Prado Este 4200</strong></p>
+          <p>
+            <strong>📞 Central:</strong> 444-2348 |
+            <strong>📱 WhatsApp:</strong> (+51) 987 654 321
+          </p>
+          <p>
+            📧 Email:
+            <a href="mailto:info@vladyreposteria.com.pe"
+              >info@vladyreposteria.com.pe</a
+            >
+          </p>
+
+          <!-- Social Media Links -->
+          <div
+            style="
+              margin: 1.5rem 0;
+              display: flex;
+              justify-content: center;
+              gap: 1rem;
+              flex-wrap: wrap;
+            "
+          >
+            <a
+              href="https://www.facebook.com/VladyReposteria"
+              target="_blank"
+              style="color: #1877f2; text-decoration: none; font-size: 1.5rem"
+              title="Facebook"
+            >
+              📘
+            </a>
+            <a
+              href="https://www.instagram.com/vladyreposteria"
+              target="_blank"
+              style="color: #e4405f; text-decoration: none; font-size: 1.5rem"
+              title="Instagram"
+            >
+              📷
+            </a>
+            <a
+              href="https://wa.me/51987654321"
+              target="_blank"
+              style="color: #25d366; text-decoration: none; font-size: 1.5rem"
+              title="WhatsApp"
+            >
+              💬
+            </a>
+            <a
+              href="https://www.tiktok.com/@vladyreposteria"
+              target="_blank"
+              style="color: #000; text-decoration: none; font-size: 1.5rem"
+              title="TikTok"
+            >
+              🎵
+            </a>
+            <a
+              href="https://www.youtube.com/vladyreposteria"
+              target="_blank"
+              style="color: #ff0000; text-decoration: none; font-size: 1.5rem"
+              title="YouTube"
+            >
+              📺
+            </a>
+          </div>
+
+          <a href="contact.html" class="btn btn-outline"
+            >Ver Todas las Sucursales</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F12137cca8a5e4f2cae2e99b67bb8f9f5%2F9445a14b8acc4eea86cf2a6ab8ebc6ed?format=webp&width=800"
+            alt="Vlady Repostería Fina y Fruta Bar - Logo Oficial"
+            class="footer-logo-svg"
+            style="filter: brightness(1.2) contrast(1.1)"
+          />
+          <div>
+            <h3 class="footer-text">VLADY</h3>
+            <p
+              style="
+                color: #d2b48c;
+                font-size: 0.75rem;
+                margin: 0;
+                letter-spacing: 1px;
+              "
+            >
+              REPOSTERÍA FINA
+            </p>
+          </div>
+        </div>
+        <p class="footer-copyright">
+          © 2024 Vlady. Todos los derechos reservados.
+        </p>
+        <div style="margin-top: 1rem; text-align: center">
+          <a
+            href="sitemap.html"
+            style="
+              color: #9ca3af;
+              font-size: 0.875rem;
+              text-decoration: none;
+              margin: 0 1rem;
+            "
+            >Mapa del Sitio</a
+          >
+          <a
+            href="mailto:delivery@vlady.com.pe"
+            style="
+              color: #9ca3af;
+              font-size: 0.875rem;
+              text-decoration: none;
+              margin: 0 1rem;
+            "
+            >Email</a
+          >
+          <a
+            href="https://www.vlady.com.pe"
+            target="_blank"
+            style="
+              color: #9ca3af;
+              font-size: 0.875rem;
+              text-decoration: none;
+              margin: 0 1rem;
+            "
+            >Sitio Oficial</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      let currentSlideIndex = 0;
+      const slides = document.querySelectorAll(".carousel-slide");
+      const dots = document.querySelectorAll(".carousel-dot");
+      const totalSlides = slides.length;
+
+      function showSlide(index) {
+        // Remove active class from all slides and dots
+        slides.forEach((slide) => slide.classList.remove("active"));
+        dots.forEach((dot) => dot.classList.remove("active"));
+
+        // Add active class to current slide and dot
+        slides[index].classList.add("active");
+        dots[index].classList.add("active");
+      }
+
+      function nextSlide() {
+        currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
+        showSlide(currentSlideIndex);
+      }
+
+      function prevSlide() {
+        currentSlideIndex = (currentSlideIndex - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlideIndex);
+      }
+
+      function currentSlide(index) {
+        currentSlideIndex = index - 1;
+        showSlide(currentSlideIndex);
+      }
+
+      // Auto-advance slides every 5 seconds
+      setInterval(nextSlide, 5000);
+
+      // Mobile menu functionality
+      function toggleMobileMenu() {
+        const overlay = document.getElementById("mobileNavOverlay");
+        overlay.classList.toggle("active");
+        document.body.classList.toggle("mobile-menu-open");
+      }
+    </script>
+  </body>
+</html>
