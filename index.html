@@ -272,75 +272,135 @@
     <section class="section">
       <div class="container">
         <h2 class="section-title">Contáctanos</h2>
+        <div class="contact-columns" style="display: flex; gap: 2rem; flex-wrap: wrap;">
+          <!-- Columna Izquierda: Información de contacto -->
+          <div class="contact-info" style="flex: 1 1 300px;">
+            <p><strong>📍 Lima, Perú - Av. Javier Prado Este 4200</strong></p>
+            <p>
+              <strong>📞 Central:</strong> 444-2348 |
+              <strong>📱 WhatsApp:</strong> (+51) 987 654 321
+            </p>
+            <p>
+              📧 Email:
+              <a href="mailto:info@vladyreposteria.com.pe"
+                >info@vladyreposteria.com.pe</a
+              >
+            </p>
 
-        <div class="contact-info">
-          <p><strong>📍 Lima, Perú - Av. Javier Prado Este 4200</strong></p>
-          <p>
-            <strong>📞 Central:</strong> 444-2348 |
-            <strong>📱 WhatsApp:</strong> (+51) 987 654 321
-          </p>
-          <p>
-            📧 Email:
-            <a href="mailto:info@vladyreposteria.com.pe"
-              >info@vladyreposteria.com.pe</a
+            <!-- Social Media Links -->
+            <div
+              style="
+                margin: 1.5rem 0;
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                flex-wrap: wrap;
+              "
             >
-          </p>
+              <a
+                href="https://www.facebook.com/VladyReposteria"
+                target="_blank"
+                style="color: #1877f2; text-decoration: none; font-size: 1.5rem"
+                title="Facebook"
+              >
+                📘
+              </a>
+              <a
+                href="https://www.instagram.com/vladyreposteria"
+                target="_blank"
+                style="color: #e4405f; text-decoration: none; font-size: 1.5rem"
+                title="Instagram"
+              >
+                📷
+              </a>
+              <a
+                href="https://wa.me/51987654321"
+                target="_blank"
+                style="color: #25d366; text-decoration: none; font-size: 1.5rem"
+                title="WhatsApp"
+              >
+                💬
+              </a>
+              <a
+                href="https://www.tiktok.com/@vladyreposteria"
+                target="_blank"
+                style="color: #000; text-decoration: none; font-size: 1.5rem"
+                title="TikTok"
+              >
+                🎵
+              </a>
+              <a
+                href="https://www.youtube.com/vladyreposteria"
+                target="_blank"
+                style="color: #ff0000; text-decoration: none; font-size: 1.5rem"
+                title="YouTube"
+              >
+                📺
+              </a>
+            </div>
 
-          <!-- Social Media Links -->
-          <div
-            style="
-              margin: 1.5rem 0;
-              display: flex;
-              justify-content: center;
-              gap: 1rem;
-              flex-wrap: wrap;
-            "
-          >
-            <a
-              href="https://www.facebook.com/VladyReposteria"
-              target="_blank"
-              style="color: #1877f2; text-decoration: none; font-size: 1.5rem"
-              title="Facebook"
+            <a href="contact.html" class="btn btn-outline"
+              >Ver Todas las Sucursales</a
             >
-              📘
-            </a>
-            <a
-              href="https://www.instagram.com/vladyreposteria"
-              target="_blank"
-              style="color: #e4405f; text-decoration: none; font-size: 1.5rem"
-              title="Instagram"
-            >
-              📷
-            </a>
-            <a
-              href="https://wa.me/51987654321"
-              target="_blank"
-              style="color: #25d366; text-decoration: none; font-size: 1.5rem"
-              title="WhatsApp"
-            >
-              💬
-            </a>
-            <a
-              href="https://www.tiktok.com/@vladyreposteria"
-              target="_blank"
-              style="color: #000; text-decoration: none; font-size: 1.5rem"
-              title="TikTok"
-            >
-              🎵
-            </a>
-            <a
-              href="https://www.youtube.com/vladyreposteria"
-              target="_blank"
-              style="color: #ff0000; text-decoration: none; font-size: 1.5rem"
-              title="YouTube"
-            >
-              📺
-            </a>
           </div>
+          <!-- Columna Derecha: Formulario de contacto -->
+          <div class="contact-form" style="flex: 1 1 300px;">
+            <div class="card" style="padding: 1.5rem">
+              <form class="form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="firstName" class="form-label">Nombre</label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      class="form-input"
+                      placeholder="Tu nombre"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName" class="form-label">Apellido</label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      class="form-input"
+                      placeholder="Tu apellido"
+                      required
+                    />
+                  </div>
+                </div>
 
-          <a href="contact.html" class="btn btn-outline"
-            >Ver Todas las Sucursales</a
-          >
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-input"
+                    placeholder="tu.email@ejemplo.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone" class="form-label">Número de Teléfono</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="form-input"
+                    placeholder="(555) 123-4567"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="width: 100%; background-color: #ea580c"
+                >
+                  Enviar Mensaje
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
